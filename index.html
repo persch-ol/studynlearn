@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}
+
+
+.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}
+@-webkit-keyframes swal-loading-anim{0%
+    {opacity:.4}
+    20%{opacity:.4}
+    50%{opacity:1}
+    to{opacity:.4}
+}
+@keyframes swal-loading-anim{0%
+    {opacity:.4}
+    20%{opacity:.4}
+    50%{opacity:1}
+    to{opacity:.4}
+}
+
+.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}
+
+.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}
+
+.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}
+
+.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}
+
+@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}
+</style>
+        
+        <!--<base href="https:// ">--><base href="."><!--[if lte IE 6]></base><![endif]-->
+        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>InfOPEN | Open-Learning online</title>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        
+        <link rel="shortcut icon" href="./InfOPEN_files/logo_sqr.HolyTrinity.jpg" type="image/x-icon">
+
+        <link rel="apple-touch-icon" href="file:///C:/">
+
+        <meta name="keywords" content="">
+        
+        <meta name="twitter:site" content="@TIP1962official">
+        
+        <meta name="msapplication-TileColor" content="#">
+        <meta name="msapplication-square70x70logo" content="">
+        <meta name="msapplication-square150x150logo" content="">
+        <meta name="msapplication-wide310x150logo" content="">
+        <meta name="msapplication-square310x310logo" content="">
+        
+    
+
+        
+            <meta property="og:image" content="/assets/headerfooter/tip-logo.png">
+            
+                <meta name="description" content="">
+                <meta property="og:description" content="">
+            
+        
+        
+        <meta property="og:title" content="Information Technology">
+        <meta property="og:url" content="https://  ">
+        <meta property="og:site_name" content="InfOPEN">
+        <meta property="og:type" content="website">
+        
+        <meta name="application-name" content="InfOPEN">
+
+        
+        <!-- Ionicon -->
+
+        <link rel="stylesheet" href="./InfOPEN_files/ionicons.min.css">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="./InfOPEN_files/all.css">
+
+        <!-- Slick -->
+        
+        <link rel="stylesheet" href="./InfOPEN_files/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="./InfOPEN_files/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
+
+        <!-- Remodal -->
+        <link rel="stylesheet" href="./InfOPEN_files/remodal.min.css" integrity="sha512-UO+dUiFTr6cCaPZKCzXEGhYsuK8DkGAS5iThyMUrtHsg+INCFyRM3GiqJ4rjuvfEyn81XGjpfmjSwwR1dAjAsw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="./InfOPEN_files/remodal-default-theme.min.css" integrity="sha512-jRxwiuoe3nt8lMSnOzNEuQ7ckDrLl31dwVYFWS6jklXQ6Nzl7b05rrWF9gjSxgOow5nFerdoN6CBB4gY5m5nDw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+        <!-- Light Gallery -->
+        <link rel="stylesheet" href="./InfOPEN_files/lightgallery.min.css">
+        
+        <!-- SweetAlert -->
+        <link rel="stylesheet" href="./InfOPEN_files/sweetalert.min.css">
+
+        
+        <link rel="stylesheet" href="./InfOPEN_files/swiper-bundle.min.css">
+
+        <!-- Full Calendar -->
+        <link rel="stylesheet" href="./InfOPEN_files/main.min.css">
+
+        <link rel="stylesheet" href="./InfOPEN_files/jquery-ui.min.css">
+        <link rel="stylesheet" href="./InfOPEN_files/MonthPicker.min.css">
+
+        
+        
+        <link rel="stylesheet" href="./InfOPEN_files/style.css">
+        <link rel="stylesheet" href="./InfOPEN_files/app.min.css">
+        
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Facebook Pixel Code -->
+        <script type="text/javascript" async="" src="./InfOPEN_files/analytics.js.download"></script>
+        <script type="text/javascript" async="" src="./InfOPEN_files/js"></script>
+
+        <script type="text/javascript" async="" src="./InfOPEN_files/js(1)"></script>
+
+        <script src="./InfOPEN_files/300519797675718" async=""></script>
+
+        <script async="" src="./InfOPEN_files/fbevents.js.download"></script>
+
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '300519797675718'); 
+        fbq('track', 'PageView');
+        </script>
+        <noscript>
+        <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=300519797675718&ev=PageView
+        &noscript=1"/>
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+            
+    </head>
+    
+    <body class="">
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        
+<header class="main-header hdr-frame ">
+	<div class="hdr-frame__logo">
+		
+			<a href="https://signup.live.com/signup?sru=https%3a%2f%2flogin.live.com%2foauth20_authorize.srf%3flc%3d1033%26client_id%3d51483342-085c-4d86-bf88-cf50c7252078%26mkt%3dEN-US%26opid%3dFE64BD995CA988D2%26opidt%3d1684569997%26uaid%3da0c9470767694739b3aaf5c50b7a13c7%26contextid%3d13ED32830A747A2B%26opignore%3d1&mkt=EN-US&uiflavor=web&lw=1&fl=easi2&client_id=51483342-085c-4d86-bf88-cf50c7252078&uaid=a0c9470767694739b3aaf5c50b7a13c7&suc=5e3ce6c0-2b1f-4285-8d4b-75ee78787346&lic=1">
+				<img class="hdr-logo" src="./InfOPEN_files/tip-logo2.jpg" alt="tip logo">
+			</a>
+		
+	</div>
+	<div class="hdr-frame__top">
+		
+				
+		<a href="https://" class="text-uppercase" target="_blank">Canvas</a>
+			
+		
+		<a href="https://" class="text-uppercase" target="_blank">Library</a>
+		
+				
+		<a href="https://" class="text-uppercase" target="_blank">Career Center</a>
+		
+				
+		<a href="https://login.live.com/ppsecure/secure.srf?cobrandid=90015&id=292841&contextid=8F914862E4357CDF&ru=https%3A%2F%2Foutlook.live.com%2Fowa%2F%3FRpsCsrfState%3Dbac6c021-0345-efcb-dff5-6535b286617d&flowtoken=DcFFmD5k6iwnL7xhWFnLvCBeMgMWUI4rcPB!ecpu7a*VZBKIzLD!HDgvD60LQqZl6xBwVpEx8SYJ90AdmZ6G8*7iXwNBZdEjLSNJm4Uj8OjvV!B6rRGH8ABETEDG1wQiJrlRP4io*Uf1lb2kwTHgJMxZfZSFofMggWP7XZ!iU*Pjb5DpLJGilrwmFn5oeWAgCSWYzGgRwgdCI4ohbTzS3UF740KSUemu6GOdRoKbrrp14rvHkuR6NBdBdQ55g4e9eCQqAzHPUvGl3T1l4wEPhpV!5Rp1Nj!jpbqesFWmCUzfAxuVE1yR*B2UtHlIpHCiJhdRR69SQvOCbt44!b9A2BiYnOggxY*vZbcl07NwJKURvkj23*k5zNg8jZv0guw2UE*KK0WvWUNcZVEWGKeAEA76dvhr*eFbX2EvTfQQ4reNkd98Y7qEdmAA8lhp2fFuEQ%24%24&uaid=209f3eba3c5e4caeb4422e37cc30c2db&opid=EB750858D2A6C199" class="text-uppercase" target="_blank">InfOPEN Email</a>
+				
+		
+		<a href="https://" class="text-uppercase" target="_blank">ARIS</a>
+				
+		
+	</div>
+	<div class="hdr-frame__bottom">
+		<div class="hdr-navList">
+			
+			<div id="frm-1" class="hdr-frame__drpdwn-cntnr">
+								
+			</div>
+			
+			<div id="frm-2" class="hdr-frame__drpdwn-cntnr">
+				
+				<span class="hdr-nav hdr-frame__txt drpdwn-txt" data-dropdown-id="frm-2">About InfOPEN</span>
+				<div class="hdr-frame__drpdwn">
+					
+					<div id="children-6" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/history/" class="" data-chldrndropdown-id="children-6">History</a>
+						
+					</div>
+					
+					<div id="children-7" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/about-the-president/" class="" data-chldrndropdown-id="children-7">About the President</a>
+						
+					</div>
+					
+					<div id="children-8" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/vision-and-mission/" class="" data-chldrndropdown-id="children-8">Vision &amp; Mission</a>
+						
+					</div>
+					
+					<div id="children-9" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/quality-policy/" class="" data-chldrndropdown-id="children-9">Quality Policy</a>
+						
+					</div>
+					
+					<div id="children-10" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/core-values/" class="" data-chldrndropdown-id="children-10">Core Values</a>
+						
+					</div>
+					
+					<div id="children-11" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/core-competencies/" class="" data-chldrndropdown-id="children-11">Core Competencies</a>
+						
+					</div>
+					
+					<div id="children-12" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/graduate-attributes/" class="" data-chldrndropdown-id="children-12">Graduate Attributes</a>
+						
+					</div>
+					
+					<div id="children-13" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/outcomes-based-education/" class="" data-chldrndropdown-id="children-13">Outcomes-Based Education</a>
+						
+					</div>
+					
+					<div id="children-15" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/about-the-logo/" class="" data-chldrndropdown-id="children-15">About the InOPEN Seal and Logo</a>
+						
+					</div>
+					
+					<div id="children-16" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/t-i-p-hymn-and-t-i-p-fight-song/" class="" data-chldrndropdown-id="children-16">InfOPEN Hymn and InfOPEN Fight Song</a>
+						
+					</div>
+					
+					<div id="children-17" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/administration/" class="" data-chldrndropdown-id="children-17">Administration</a>
+						
+					</div>
+					
+					<div id="children-18" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/topnotchers-and-achievers/" class="" data-chldrndropdown-id="children-18">Topnotchers and Achievers</a>
+						
+					</div>
+					
+					<div id="children-240" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://about-tip/educational-philosophy/" class="" data-chldrndropdown-id="children-240">Educational Philosophy</a>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="frm-22" class="hdr-frame__drpdwn-cntnr">
+				
+				<span class="hdr-nav hdr-frame__txt drpdwn-txt" data-dropdown-id="frm-22">What We Offer</span>
+				<div class="hdr-frame__drpdwn">
+					
+					<div id="children-23" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+												
+						<a class="" data-chldrndropdown-id="children-23">SHS Academic Tracks <i class="fa fa-caret-right icon"></i></a>
+						<div class="hdr-frame__chldrn-drpdwn">
+								
+								<a href="https://what-we-offer/shs-academic-tracks/stem/" class="display--block">STEM</a>
+								
+								<a href="https://what-we-offer/shs-academic-tracks/humss/" class="display--block">HUMSS</a>
+								
+								<a href="https://what-we-offer/shs-academic-tracks/abm/" class="display--block">ABM</a>
+								
+						</div>
+									
+						
+						
+					</div>
+					
+					<div id="children-27" class="hdr-frame__chldrn-drpdwn-cntnr">		
+						
+						
+						<a href="https://what-we-offer/undergraduate-programs/" class="" data-chldrndropdown-id="children-27">Undergraduate Programs</a>					
+						
+						
+						
+					</div>
+					
+					<div id="children-45" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						
+						
+						<a href="https://what-we-offer/graduate-programs/" class="" data-chldrndropdown-id="children-45">Graduate Programs</a>					
+						
+						
+						
+					</div>
+					
+					<div id="children-47" class="hdr-frame__chldrn-drpdwn-cntnr">				
+
+						 											
+						
+						<a href="https://what-we-offer/academic-calendar/college-and-graduate-programs/1st-semester-sy-2021-2022/" class="" data-chldrndropdown-id="children-53">Academic Calendar</a>						
+						
+										
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="frm-20" class="hdr-frame__drpdwn-cntnr">
+				
+				<span class="hdr-nav hdr-frame__txt drpdwn-txt" data-dropdown-id="frm-20">Join InfOPEN</span>
+				<div class="hdr-frame__drpdwn">
+					
+					<div id="children-55" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://be-a-tip-ian/requirements/" class="" data-chldrndropdown-id="children-55">Requirements</a>
+						
+					</div>
+					
+					<div id="children-56" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://be-a-tip-ian/enrollment-guidelines/" class="" data-chldrndropdown-id="children-56">Enrollment Guidelines</a>
+						
+					</div>
+					
+					<div id="children-57" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://be-a-tip-ian/registration/" class="" data-chldrndropdown-id="children-57">Registration</a>
+						
+					</div>
+					
+					<div id="children-58" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://be-a-tip-ian/scholarships/" class="" data-chldrndropdown-id="children-58">Scholarships</a>
+						
+					</div>
+					
+					<div id="children-59" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://be-a-tip-ian/faqs/" class="" data-chldrndropdown-id="children-59">FAQs</a>
+						
+					</div>
+					
+					<div id="children-98" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://be-a-tip-ian/downloads/" class="" data-chldrndropdown-id="children-98">Downloads</a>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="frm-383" class="hdr-frame__drpdwn-cntnr">
+				
+				<span class="hdr-nav hdr-frame__txt drpdwn-txt" data-dropdown-id="frm-383">infOpen-School Life</span>
+				<div class="hdr-frame__drpdwn">
+					
+					<div id="children-384" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						
+						
+						<a class="" data-chldrndropdown-id="children-384">Student Life <i class="fa fa-caret-right icon"></i></a>
+						<div class="hdr-frame__chldrn-drpdwn">
+								
+								<a href="https://campus-life-3/blogs/students-upbeat-about-resuming-campus-life/" class="display--block">Resuming Campus Life </a>
+								
+								<a href="https://campus-life-3/blogs/how-to-thrive-in-student-competitions/" class="display--block">How to Thrive in Student Competitions</a>
+								
+								<a href="https://campus-life-3/blogs/students-ideas-2023-scitech-fair/" class="display--block">Students Showcase Diverse Ideas at 2023 SciTech Fair</a>
+								
+								<a href="https://campus-life-3/blogs/tip-students-expectations/" class="display--block">How the T.I.P. Education Measures Up to Students’ Expectations</a>
+								
+								<a href="https://campus-life-3/blogs/engineering-student-not-math-geek/" class="display--block">What Makes a Good Engineering Student? It’s Not Being a Math Geek</a>
+								
+								<a href="https://campus-life-3/blogs/transferees-choose-tip/" class="display--block">Transferees Explain What Made Them Choose T.I.P.</a>
+								
+						</div>					
+												
+						
+					</div>
+					
+					<div id="children-385" class="hdr-frame__chldrn-drpdwn-cntnr">						
+						
+						
+						<a class="" data-chldrndropdown-id="children-385">infOPEN Events <i class="fa fa-caret-right icon"></i>
+                        </a>
+
+						<div class="hdr-frame__chldrn-drpdwn">
+								
+								<a href="https://campus-life-3/events/15th-olymphysics-at-tip-quezon-city/" class="display--block">15th OlymPHYSICS at infOPEN Cebu City</a>
+								
+								<a href="https://campus-life-3/events/quantum-clash-math-physics-showdown/" class="display--block">1st Annual Quantum Clash: A Match and Physics Showdown</a>
+								
+						</div>					
+											
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="frm-409" class="hdr-frame__drpdwn-cntnr">
+				
+				<a href="https://visit-tip-ph/" class="hdr-nav ">Contact InfOPEN</a>
+				
+			</div>
+			
+			<div id="frm-60" class="hdr-frame__drpdwn-cntnr">
+				
+				<a href="https://career-at-tip/" class="hdr-nav ">Careers at InfOPEN</a>
+				
+			</div>
+			
+			<div id="frm-3" class="hdr-frame__drpdwn-cntnr">
+				
+				<span class="hdr-nav hdr-frame__txt drpdwn-txt" data-dropdown-id="frm-3">Partner with InfOPEN</span>
+				<div class="hdr-frame__drpdwn">
+					
+					<div id="children-61" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://" class="" data-chldrndropdown-id="children-61">InfOPEN
+                         TechnoCoRe</a>
+						
+					</div>
+					
+					<div id="children-62" class="hdr-frame__chldrn-drpdwn-cntnr">
+						
+						<a href="https://" class="" data-chldrndropdown-id="children-62">Career Center</a>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="frm-64" class="hdr-frame__drpdwn-cntnr">
+				
+					<a class="hdr-nav" href="https://search/">
+						<span><i class="fas fa-search"></i></span>
+					</a>
+				
+			</div>
+			
+		</div>
+	</div>
+	
+</header>
+
+<div class="spacing"></div>
+
+<div class="fltng-menu-btn">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+
+<div class="fltng-menu">	
+	
+		<a href="https://undergraduate-programs/" class="font-weight--bold fltng-menu-header">InfOPEN Portals</a>
+				
+		
+		<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-engineering-and-architecture/outcomes-based-education/">Students Portal</a>		
+		
+		
+		<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-computer-studies/outcomes-based-education/">Alumni Portal</a>		
+		
+		
+		<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-business-education/outcomes-based-education/">Faculty Portal</a>
+		
+		
+		
+		<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-education/outcomes-based-education/">Admin & Staff Portal</a>		
+		
+		
+		
+		<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-arts/outcomes-based-education/">Technical-Support Portal</a>	
+
+	
+	<a href="javascript:history.back()" class="fltng-menu-link">Back</a>
+	<a href="file:///C:/!comUsr/Website%20samples/IT-Educ%20pages/IT-TIP/&web_Exerc/InfOPEN_index.html" class="fltng-menu-link">Home</a>
+	
+	<a href="https://#latestNews" class="fltng-menu-link">Latest News</a>
+	<a href="https://web/" class="fltng-menu-link">Apply Now</a>
+	
+</div>
+
+
+<div class="hdr-frame mbl-header">
+	<div class="mbl-header__logo">
+		
+		<a href="file:///C:/!comUsr/Website%20samples/IT-Educ%20pages/IT-TIP/&web_Exerc/InfOPEN_index.html" class="hdr-logo">
+			<img src="./InfOPEN_files/logo_sqr.HolyTrinity.jpg" alt="">
+			<p>InfOPEN Learning Online Education</p>
+		</a>
+		
+	</div>
+	<div class="mbl-header__icon">
+		<img src="./InfOPEN_files/menu-btn.svg" alt="menu-icon">
+	</div>
+
+	<div class="mbl-hdr__overlay"></div>
+	<div class="mbl-header__links">
+		<img class="close-btn" src="./InfOPEN_files/close-btn.svg" alt="close-icon">		
+
+		
+		<div class="frm-accordion">
+			<div class="frm-accordion-item " "="">
+				<a href="file:///C:/!comUsr/Website%20samples/IT-Educ%20pages/IT-TIP/&web_Exerc/InfOPEN_index.html" class="frm-section-title">
+					<p class="clr--white">Home</p>
+				</a>
+			</div>
+		</div>		
+
+		
+		<div class="frm-accordion">
+			<div id="menulink-2" class="frm-accordion-item ">
+				<div class="frm-section-title" data-acc-id="menulink-2">
+					<p class="clr--white">About InfOPEN</p>
+					<i class="fa fa-caret-down align-t"></i>
+				</div>
+				<div class="frm-accordion-desc frm-desc" style="">
+					
+					<!-- <div id="children-6" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/history/" class="" data-chldrndropdown-id="children-6">History</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-7" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/about-the-president/" class="" data-chldrndropdown-id="children-7">About the President</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-8" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/vision-and-mission/" class="" data-chldrndropdown-id="children-8">Vision &amp; Mission</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-9" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://quality-policy/" class="" data-chldrndropdown-id="children-9">Quality Policy</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-10" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/core-values/" class="" data-chldrndropdown-id="children-10">Core Values</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-11" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/core-competencies/" class="" data-chldrndropdown-id="children-11">Core Competencies</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-12" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/graduate-attributes/" class="" data-chldrndropdown-id="children-12">Graduate Attributes</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-13" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/outcomes-based-education/" class="" data-chldrndropdown-id="children-13">Outcomes-Based Education</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-15" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/about-the-logo/" class="" data-chldrndropdown-id="children-15">About the InfOPEN Seal and Logo</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-16" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/t-i-p-hymn-and-t-i-p-fight-song/" class="" data-chldrndropdown-id="children-16">infOPEN Hymn and infOPEN Fight Song</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-17" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/administration/" class="" data-chldrndropdown-id="children-17">Administration</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-18" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://about-tip/topnotchers-and-achievers/" class="" data-chldrndropdown-id="children-18">Topnotchers and Achievers</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-240" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://educational-philosophy/" class="" data-chldrndropdown-id="children-240">Educational Philosophy</a>
+						
+					<!-- </div> -->
+					
+
+					
+				</div>
+			</div>
+		</div>		
+		
+			
+		<div class="frm-accordion">
+			<div id="menulink-22" class="frm-accordion-item ">
+				<div class="frm-section-title" data-acc-id="menulink-22">
+					<p class="clr--white">What We Offer</p>
+					<i class="fa fa-caret-down align-t"></i>
+				</div>
+				<div class="frm-accordion-desc frm-desc" style="">
+					
+					<!-- <div id="children-23" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						
+						
+						<a class="" data-chldrndropdown-id="children-23">SHS Academic Tracks</a>
+						<!-- <div class="hdr-frame__chldrn-drpdwn"> -->
+								
+								<a href="https://what-we-offer/shs-academic-tracks/stem/" class="display--block s-margin-l">STEM</a>
+								
+								<a href="https://what-we-offer/shs-academic-tracks/humss/" class="display--block s-margin-l">HUMSS</a>
+								
+								<a href="https://what-we-offer/shs-academic-tracks/abm/" class="display--block s-margin-l">ABM</a>
+								
+						<!-- </div> -->
+
+						
+						
+						
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-27" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						
+						
+						<a href="https://what-we-offer/undergraduate-programs/" class="" data-chldrndropdown-id="children-27">Undergraduate Programs</a>
+						
+						
+						
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-45" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						
+						
+						<a href="https://what-we-offer/graduate-programs/" class="" data-chldrndropdown-id="children-45">Graduate Programs</a>
+						
+						
+						
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-47" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+
+						 
+						
+						
+						
+						<a href="https://what-we-offer/academic-calendar/college-and-graduate-programs/1st-semester-sy-2021-2022/" class="" data-chldrndropdown-id="children-53">Academic Calendar</a>	
+						
+						
+											
+					<!-- </div> -->
+					
+
+					
+				</div>
+			</div>
+		</div>
+				
+		<div class="frm-accordion">
+			<div id="menulink-20" class="frm-accordion-item ">
+				<div class="frm-section-title" data-acc-id="menulink-20">
+					<p class="clr--white">Join InfOPEN</p>
+					<i class="fa fa-caret-down align-t"></i>
+				</div>
+				<div class="frm-accordion-desc frm-desc" style="">
+					
+					<!-- <div id="children-55" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://be-a-tip-ian/requirements/" class="" data-chldrndropdown-id="children-55">Requirements</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-56" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://dru.tip.edu.ph/be-a-tip-ian/enrollment-guidelines/" class="" data-chldrndropdown-id="children-56">Enrollment Guidelines</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-57" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://dru.tip.edu.ph/be-a-tip-ian/registration/" class="" data-chldrndropdown-id="children-57">Registration</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-58" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://dru.tip.edu.ph/be-a-tip-ian/scholarships/" class="" data-chldrndropdown-id="children-58">Scholarships</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-59" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://dru.tip.edu.ph/be-a-tip-ian/faqs/" class="" data-chldrndropdown-id="children-59">FAQs</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-98" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://dru.tip.edu.ph/be-a-tip-ian/downloads/" class="" data-chldrndropdown-id="children-98">Downloads</a>
+						
+					<!-- </div> -->
+					
+
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+
+		
+		<div class="frm-accordion">
+			<div id="menulink-383" class="frm-accordion-item ">
+				<div class="frm-section-title" data-acc-id="menulink-383">
+					<p class="clr--white">Campus Life</p>
+					<i class="fa fa-caret-down align-t"></i>
+				</div>
+				<div class="frm-accordion-desc frm-desc" style="">
+					
+					<!-- <div id="children-384" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						
+						
+						<a class="" data-chldrndropdown-id="children-384">Student Life</a>
+						<!-- <div class="hdr-frame__chldrn-drpdwn"> -->
+								
+								<a href="https://campus-life-3/blogs/students-upbeat-about-resuming-campus-life/" class="display--block s-margin-l">Resuming Campus Life </a>
+								
+								<a href="https://campus-life-3/blogs/how-to-thrive-in-student-competitions/" class="display--block s-margin-l">How to Thrive in Student Competitions</a>
+								
+								<a href="https://campus-life-3/blogs/students-ideas-2023-scitech-fair/" class="display--block s-margin-l">Students Showcase Diverse Ideas at 2023 SciTech Fair</a>
+								
+								<a href="https://campus-life-3/blogs/tip-students-expectations/" class="display--block s-margin-l">How the infOPEN Education Measures Up to Students’ Expectations</a>
+								
+								<a href="https://campus-life-3/blogs/engineering-student-not-math-geek/" class="display--block s-margin-l">What Makes a Good Engineering Student? It’s Not Being a Math Geek</a>
+								
+								<a href="https://campus-life-3/blogs/transferees-choose-tip/" class="display--block s-margin-l">Transferees Explain What Made Them Choose infOPEN</a>
+								
+						<!-- </div> -->
+
+							
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-385" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						
+						
+						<a class="" data-chldrndropdown-id="children-385">infOPEN Events</a>
+						<!-- <div class="hdr-frame__chldrn-drpdwn"> -->
+								
+								<a href="https://campus-life-3/events/15th-olymphysics-at-tip-quezon-city/" class="display--block s-margin-l">15th OlymPHYSICS at infOPEN Cebu City</a>
+								
+								<a href="https://campus-life-3/events/quantum-clash-math-physics-showdown/" class="display--block s-margin-l">1st Annual Quantum Clash: A Match and Physics Showdown</a>
+								
+						<!-- </div> -->
+				
+						
+					<!-- </div> -->
+					
+
+					
+				</div>
+			</div>
+		</div>		
+		
+		
+		<div class="frm-accordion">
+			<div class="frm-accordion-item " "="">
+				<a href="https:///visit-tip-ph/" class="frm-section-title">
+					<p class="clr--white">Visit infOPEN</p>
+				</a>
+			</div>
+		</div>
+		
+		
+		
+		<div class="frm-accordion">
+			<div class="frm-accordion-item " "="">
+				<a href="https://career-at-tip/" class="frm-section-title">
+					<p class="clr--white">Careers at infOPEN</p>
+				</a>
+			</div>
+		</div>
+		
+		
+		
+
+		
+		<div class="frm-accordion">
+			<div id="menulink-3" class="frm-accordion-item ">
+				<div class="frm-section-title" data-acc-id="menulink-3">
+					<p class="clr--white">Partner with infOPEN</p>
+					<i class="fa fa-caret-down align-t"></i>
+				</div>
+				<div class="frm-accordion-desc frm-desc" style="">
+					
+					<!-- <div id="children-61" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://" class="" data-chldrndropdown-id="children-61">infOPEN TechnoCoRe</a>
+						
+					<!-- </div> -->
+					
+					<!-- <div id="children-62" class="hdr-frame__chldrn-drpdwn-cntnr"> -->
+						
+						<a href="https://" class="" data-chldrndropdown-id="children-62">Career Center</a>
+						
+					<!--(disabled01) </div> --(disabled01)-->
+					
+
+					<!-- 
+					
+					<a href="https://technocore.tip.edu.ph/">T.I.P. TechnoCoRe</a>		
+					
+					
+					<a href="https://tip-careercenter.prosple.com/">Career Center</a>
+					
+					 -->
+				</div>
+			</div>
+		</div>		
+		
+		
+
+		<div class="mbl-header__sublinks">		
+			
+				
+			
+				
+					
+						<a href="https://search/" class="clr--white text-uppercase font-size--small display--block"><i class="fas fa-search s-margin-r"></i> Search </a>		
+			
+			
+			
+				<a href="https://" class="clr--white text-uppercase font-size--small display--block" target="_blank">Canvas</a>			
+			
+			
+				<a href="https://" class="clr--white text-uppercase font-size--small display--block" target="_blank">Library</a>		
+			
+			
+				<a href="https://" class="clr--white text-uppercase font-size--small display--block" target="_blank">Career Center</a>		
+			
+			
+			
+				<a href="https://mail.html" class="clr--white text-uppercase font-size--small display--block" target="_blank">T.I.P. Email</a>		
+			
+			
+			
+				<a href="https://portal/aris/index.php" class="clr--white text-uppercase font-size--small display--block" target="_blank">ARIS</a>		
+			
+			
+		</div>
+	</div>
+</div>
+        
+
+        <div class="main" id="stylesheet">
+            
+
+            
+<div class="frm-banner">
+	<div class="page-bg page-bg--cover bring-back" style="background-image: url(&#39;/assets/banner/frame-1/tip-banner.png&#39;)"></div>
+	<div class="frm-banner-overlay"></div>
+	<div class="frm-cntnr width--85 frm-padding">
+		<h1>College of Computer Studies</h1>
+		<div class="frm-breadcrumbs">
+			<a href="https://what-we-offer/undergraduate-programs/" class="frm-breadcrumbs__link" data-item-id="1">What We Offer</a>
+			<a href="https://what-we-offer/undergraduate-programs/" class="frm-breadcrumbs__link" data-item-id="2">Undergraduate Programs</a>
+			<a href="https://what-we-offer/undergraduate-programs/" class="frm-breadcrumbs__link" data-item-id="3">InfOPEN Cebu City</a>
+			<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-computer-studies/information-technology/#" class="frm-breadcrumbs__link is-active active" data-item-id="4">College of Computer Studies</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="prgrm-frm">
+	
+    <div>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <img class="cube-pattern" src="1onL_beachC.jpg" style=" width: 78.5%; height: 24% " alt="">
+    <img class="cube-pattern" src="2onL_grpC.jpg" style="width: 78.5%" alt="">
+    <img class="cube-pattern" src="2onL_inv3.jpg" style="width: 78.5%" alt="">
+    <img class="cube-pattern" src="2onL-classRm.jpg" style="width: 79.1%; height: 24% " alt="">
+    <img class="cube-pattern" src="3onL_assistC.jpg" style="width: 79%; height: 24% " alt="">
+    <img class="cube-pattern" src="3onL_kid1homeC.jpg" style="width: 78.5%; height: 24% " alt="">
+    <img class="cube-pattern" src="4onL_kid1homeC2.jpg" style="width: 78.5%; height: 24% " alt="">
+    <img class="cube-pattern" src="5onL_homeC.jpg" style="width: 78.3%; height: 24% " alt="">
+    <img class="cube-pattern" src="6onL_beachC.jpg" style="width: 78.5%; height: 24% " alt="">
+    <img class="cube-pattern" src="7onL_assistC.jpg" style="width: 78%; height: 24% " alt="">
+    <img class="cube-pattern" src="8onL_inv5.jpg" style="width: 78.5%; height: 24% " alt="">
+    <script>
+       w3.slideshow(".cube-pattern", 2800);
+    </script>
+    </div>
+
+	<img class="cube-pattern-bot" style="opacity: 0.2; " src="./InfOPEN_files/bckgnd_top1.jpg" alt="">
+	
+	<p class="sidebar-menu-btn">
+		Information Technology
+		<i class="fa fa-angle-right"></i>
+	</p>
+	<div class="frm-cntnr width--95 frm-padding">
+		<div class="prgrm-frm__cntnr">
+
+
+			<div class="prgrm-frm__col">
+				
+				<div class="prgrm-frm__sidebar program-sidebar">
+					<img src="./InfOPEN_files/close-btn-red.svg" class="sidebar-close-btn">
+					
+					
+					<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-computer-studies/outcomes-based-education/" class="">Outcomes-Based Education</a>
+					
+					
+					
+					<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-computer-studies/program-certification/" class="">Program Certification</a>
+					
+					
+					
+					<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-computer-studies/computer-science/" class="">Computer Science</a>
+					
+					
+					
+					<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-computer-studies/data-science-and-analytics/" class="">Data Science and Analytics</a>
+					
+					
+					
+					<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-computer-studies/information-system/" class="">Information Systems</a>
+					
+					
+					
+					<a href="https://what-we-offer/undergraduate-programs/t-i-p-quezon-city/college-of-computer-studies/information-technology/" class="active">Information Technology</a>
+					
+					
+				</div>
+			</div>
+			
+            <div class="prgrm-frm__col">
+				
+
+
+<div class="gnrc-frm__cntnr">
+	<div class="frm-desc text-center">
+		
+		<div class="page-bg--32-9">
+			<div class="page-bg page-bg--cover" style="background-image: url(&#39;/assets/genericpage/images/CITE-BANNERS-QC-03.jpg&#39;)"></div>
+		</div>
+		
+	</div>
+</div>
+
+
+<div class="gnrc-frm__cntnr">
+	<div class="frm-desc" style="color: forestgreen;  ">
+		<p>The Information Technology program is focused on the utilization of computers and computer software to plan, install, customize, operate, manage, administer and maintain information technology systems.</p><p>&nbsp;</p><p>The program prepares students to be IT professionals who are well versed in application installation, operation, development, maintenance and administration; as well as familiar with hardware installation, operation, and maintenance.</p><p>&nbsp;</p><p><strong>Accredited by the Computing Accreditation Commission (CAC) of ABET <span style="color: #000000;">(<a style="color: #000000;" href="http://www.abet.org/">www.abet.org</a>)</span></strong></p><p><strong>Accredited by PCS Philippine Information and Computing Accreditation Board (PICAB)</strong></p><p><strong>Accredited by Seoul Accord</strong></p><p>&nbsp;</p><h4><strong>Recognition:</strong></h4><p>From CHED: Center of Excellence (COE) for Information Technology Education (ITE)<br>From PACUCOA: <span style="font-weight: 400;">Level IV First Reaccredited Status in Information Technology</span></p><p>&nbsp;</p><p>&nbsp;</p><h4><strong>PROGRAM EDUCATIONAL OBJECTIVES</strong></h4><p>&nbsp;</p><p>The Information Technology program has adopted the following educational objectives.</p><p>&nbsp;</p><p>Three to five years after graduation, the Information Technology alumni shall:</p><ul>
+<li>have advanced their practice or achievement in the field of Information Technology and/or other endeavors or advocacies supported by their acquired information technology education;</li>
+<li>be globally competitive through<br>- living by the TIP mission values, pursuing continuing education, and practicing continuous quality improvement in their personal lives;<br>- continuously scanning, adopting, and building on the best practices in their field.</li>
+</ul><p>&nbsp;</p><p>&nbsp;</p><h4><strong>STUDENT OUTCOMES</strong></h4><p>&nbsp;</p><p>By the time of graduation, students will be able to:</p><p>a. apply knowledge of computing, science, and mathematics appropriate to the discipline;</p><p>b. analyze a complex problem and identify and define the computing requirements appropriate to its solution;</p><p>c. design, implement, and evaluate a computer based system, process, component, or program to meet desired needs with</p><p>&nbsp; &nbsp;appropriate constraints for public health and safety, cultural, societal, and environmental considerations;</p><p>d. use modern techniques, skills, and tools of computing practice in complex computing activities;</p><p>e. function effectively as an individual and as a member or leader in diverse teams and in multi-disciplinary settings;</p><p>f. communicate effectively about complex computing activities with various communities, such as computing experts and</p><p>&nbsp; &nbsp;society at large, using appropriate levels of discourse;</p><p>g. analyze the local and global impact of computing on individuals, organizations, and society;</p><p>h. understand professional, ethical, legal, security, and social issues and responsibilities relevant to professional computing</p><p>&nbsp; &nbsp;practice;</p><p>i. recognize the need for, and have the ability to engage in continuous professional development and lifelong learning;</p><p>j. identify and analyze user needs and take them into account in the selection, creation, evaluation, and administration of</p><p>&nbsp; &nbsp;computer based systems;</p><p>k. use and apply current technical concepts and practices in the core information technologies;</p><p>l. integrate IT based solutions into the user environment effectively;</p><p>m. understand best practices and standards and their applications;</p><p>n. assist in the creation of an effective project plan.</p><p>&nbsp;</p><p>&nbsp;</p><p><span style="font-weight: 400;">For students entering as freshmen for SY 2018-2019, the following SOs apply:</span></p><p><span style="font-weight: 400;">Student outcomes are outcomes (1) through (5) common to Computer Science (CS), Information Systems (IS), and Information Technology (IT). There are separate additional outcomes for CS, IS, and IT.&nbsp;</span></p><p>&nbsp;</p><p><span style="font-weight: 400;">By the time of graduation, students will have the ability to:</span></p><p>&nbsp;</p><ol>
+<li><span style="font-weight: 400;"> analyze a complex computing problem and apply principles of computing and other relevant disciplines to identify solutions.</span></li>
+<li><span style="font-weight: 400;"> design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline.</span></li>
+<li><span style="font-weight: 400;"> communicate effectively in a variety of professional contexts.&nbsp;</span></li>
+<li><span style="font-weight: 400;"> recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles.</span></li>
+<li><span style="font-weight: 400;"> function effectively as a member or leader of a team engaged in activities appropriate to the program’s discipline.</span></li>
+<li><span style="font-weight: 400;"> identify and analyze user needs and to take them into account in the selection, creation, integration, evaluation, and administration of computing-based systems (IT).</span></li>
+</ol>
+	</div>
+</div>
+
+
+<div class="gnrc-frm__cntnr">
+	<div class="display--flex flex--wrap justify--center align--center">
+		
+		
+		
+		<a href="https://web/" target="_blank" class="frm-btn s-margin-lr s-margin-b
+		btn-primary">Apply Now</a>
+
+		
+
+		
+		
+		
+		
+		<a href="https://assets/generic-pages/downloadables/IT-2018-CURRICULUM_ARIS.pdf" download="IT 2018 CURRICULUM ARIS" target="_blank" class="frm-btn s-margin-lr s-margin-b
+		btn-outlined">Download Program Curriculum</a>
+		
+
+		
+		
+		
+		
+		<a href="https://assets/generic-pages/downloadables/Annual-Enrollment_Graduation-Data-ABET-Program-QC-IT.pdf" download="Annual Enrollment Graduation Data ABET Program QC IT" target="_blank" class="frm-btn s-margin-lr s-margin-b
+		btn-outlined">Download Annual Student Enrollment</a>
+		
+
+		
+		
+	              </div>
+                </div>
+
+
+
+			  </div>
+		    </div>
+          </div>
+        </div>
+    </div>
+
+        
+        
+<footer class="ftr-frame">
+	<a href="https://what-we-offer/undergraduate-programs/infOPEN-quezon-city/college-of-computer-studies/information-technology/#" class="back-to-top">
+		<img class="back-to-top-btn" src="./InfOPEN_files/back-to-top.png" alt="" style="display: none;">
+	</a>
+	<div class="width--90 frm-cntnr">
+		<div class="ftr-contentCon top">
+			<div class="ftr-logoCon">
+				
+				<a href="./InfOPEN_index19.html" class="ftr-logo">
+					<img src="./InfOPEN_files/logo_sqr.HolyTrinity.jpg" alt="">
+					<p class="font-size--large">InfOPEN Learning Online Education</p>
+				</a>
+				
+				<div class="ftr-details font-size--small">
+					<div class="ftr-details font-size--small">
+<p><a rel="noopener" href="https://www.google.com/maps/place/" target="_blank">4386 Leon Kilat, Ermita, Cebu City<br></a><a rel="noopener" href="https://www.google.com/maps/place/" target="_blank">4386 Leon Kilat, Ermita, Cebu City<br></a>Tel. No: (+6332) 8910-1234</p>
+</div>
+				</div>
+				
+				<div class="ftr-details font-size--small">
+					<p><span><a rel="noopener" href="https://www.google.com/maps/place/T.I.P/@14.6268996,121.0613361,3a,75y,166.23h,75.25t/data=!3m6!1e1!3m4!1sCf2D7vmIOaH34kA4WBcVcg!2e0!7i16384!8i8192!4m5!3m4!1s0x3397b796a3501db1:0xd42dbc3bc16dfaa6!8m2!3d14.6253146!4d121.0611403" target="_blank">4386 Leon Kilat, Ermita, Cebu City</a></span></p><p><span>Tel. No: (+6332) 8910-1234</span></p><p>&nbsp;</p><p><span>E-mail:&nbsp;</span><span><a rel="noopener" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">ask@infOPEN.edu.ph</a></span></p>
+				</div>
+				
+				
+			</div>
+
+			<div class="ftr-col">
+				<div class="ftr-accordion">
+					<div id="student-service" class="ftr-accordion-item">
+						
+						<div class="ftr-section-title" data-acc-id="student-service">
+							<p class="clr--white font-weight--bold font-size--small">Student Services</p>
+							<i class="fa fa-caret-right align-t"></i>
+						</div>
+						<div class="ftr-accordion-desc frm-desc">
+							
+							
+							<a href="https://" class="ftr-link font-size--small" target="_blank">Canvas</a>
+							
+							
+							
+							<a href="https://" class="ftr-link font-size--small" target="_blank">Library</a>
+							
+							
+							
+							<a href="https://" class="ftr-link font-size--small" target="_blank">Career Center</a>
+							
+							
+							
+							<a href="https://mail.html" class="ftr-link font-size--small" target="_blank">InfOPEN Email</a>
+							
+							
+							
+							<a href="https://portal/aris/index.php" class="ftr-link font-size--small" target="_blank">ARIS</a>
+							
+							
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="ftr-col">
+				<div class="ftr-accordion">
+					
+					<div id="quick-links" class="ftr-accordion-item">
+						<div class="ftr-section-title" data-acc-id="quick-links">
+							<p class="clr--white font-weight--bold font-size--small">Quick Links</p>
+							<i class="fa fa-caret-right align-t"></i>
+						</div>
+						<div class="ftr-accordion-desc frm-desc">
+							
+							
+							<a href="https://about-tip/history/" class="ftr-link font-size--small">About InfOPEN</a>
+							
+							
+							
+							<a href="https://be-a-tip-ian/faqs/" class="ftr-link font-size--small">FAQs</a>
+							
+							
+							
+							<a href="https://web/" class="ftr-link font-size--small">Admission</a>
+							
+							
+							
+							<a href="https://career-at-tip/" class="ftr-link font-size--small">Careers at InfOPEN</a>
+							
+							
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<div class="ftr-col">
+				
+				<p class="font-weight--bold ftr-title font-size--small"> Follow Us</p>
+				<div class="ftr-socmed-cntnr">
+					
+					<a href="https://facebook.com/TIP1962official/" class="ftr-link ftr-socmed font-size--small" target="_blank">
+						<img src="./InfOPEN_files/image-1.png" alt="image 1">
+						<span>Facebook</span>
+					</a>
+					
+					<a href="https://TIP1962official" class="ftr-link ftr-socmed font-size--small" target="_blank">
+						<img src="./InfOPEN_files/image-2.png" alt="image 2">
+						<span>Twitter</span>
+					</a>
+					
+					<a href="https://tip1962official/" class="ftr-link ftr-socmed font-size--small" target="_blank">
+						<img src="./InfOPEN_files/image-3.png" alt="image 3">
+						<span>Instagram</span>
+					</a>
+					
+					<a href="https://channel/UCuV9LML0WXzdI0OYgmiPk1w" class="ftr-link ftr-socmed font-size--small" target="_blank">
+						<img src="./InfOPEN_files/image-4.png" alt="image 4">
+						<span>YouTube</span>
+					</a>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="ftr-contentCon bottom l-margin-t">
+			<div class="display--flex">
+				
+				
+				<a href="https://privacy-policy" class="policy font-size--small">Privacy Policy</a>
+				
+				
+				
+			</div>
+			<div class="ftr-copyright">
+				<p class="clr--white font-size--small">© 2023 InfOPEN. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+        
+
+        <!-- !!! -->
+        <script type="text/javascript">
+            var pageID = 'Program',
+            baseHref = 'file:///C:/!comUsr/Website%20samples/IT-Educ%20pages/IT-TIP/&web_Exerc/InfOPEN_index.html',
+            themeDir = '/_resources/themes/main';
+        </script>
+
+
+        <!--Start of Jitbit Script-->
+        <script type="text/javascript">
+
+            //All settings are OPTIONAL. Remove them to use the defaults
+            var hdWidget = {
+                text: "Contact us", //text on the widget tab
+                position: "right", //You can use "right" or "left" to position the widget
+                bgColor: "#4c5b6b", //background color
+                fgColor: "#ffffff", //text color
+                borderColor: "#fff", //color of the border around the widget
+                categoryId: 42, //pre-selected category in the widget. Get the ID from the admin panel
+                hideCategory: 0, //set to "1" to hide category select box, works only if you also pass a default category
+                autoShow: 0, //auto show the widget after X seconds. "0" to disable auto showing
+                email: "", //prefilled user email if you already know it in your app
+            };
+           
+            //you can also open or close the widget programmatically
+            //by calling _hdWidget.toggleWidget() anywhere in your code
+        </script>
+        <script type="text/javascript" src="./InfOPEN_files/support-widget-light.js.download" defer=""></script>
+        
+        
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="" src="./InfOPEN_files/js(2)"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-228052031-1');
+        </script>
+        
+
+        <!-- Script -->
+        <script type="text/javascript" src="./InfOPEN_files/vendor.min.js.download"></script>
+        <script type="text/javascript" src="./InfOPEN_files/app.min.js.download"></script>
+        
+        <!-- jQuery -->
+        
+        <script src="./InfOPEN_files/jquery-ui.min.js.download"></script>
+
+        <!-- Validate -->
+        <script src="./InfOPEN_files/jquery.validate.min.js.download"></script>
+
+        <!-- Slick -->
+        
+        <script type="text/javascript" src="./InfOPEN_files/slick.min.js.download"></script>
+
+        <!-- SweetAlert -->
+        <script src="./InfOPEN_files/sweetalert.min.js.download"></script>
+
+
+        <!-- TweenMax -->
+        <script src="./InfOPEN_files/gsap.min.js.download" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+        <script src="./InfOPEN_files/MotionPathPlugin.min.js.download" integrity="sha512-2vgSeT4mD0azBGIp91Fnho9fbT8ZG8zu5c+mK//TGxj4YNX2mRAwEZHtZsMRwA7ObqH6Vl7mMOdvkzNVTuhUcA==" crossorigin="anonymous"></script>
+
+        <!-- ScrollMagic -->
+        <script src="./InfOPEN_files/ScrollMagic.min.js.download"></script>
+        <script src="./Information Technology _ Technological Institute of the Philippines_files/animation.gsap.js.download"></script>
+
+        <script src="./InfOPEN_files/remodal.min.js.download" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Full Calendar -->  
+        <script src="./InfOPEN_files/moment.js.download"></script>
+        <script src="./InfOPEN_files/main.min.js.download"></script>
+        <script src="./InfOPEN_files/MonthPicker.min.js.download"></script>
+
+        
+
+
+        
+
+        <!-- Light Gallery -->
+        <script type="text/javascript" src="./InfOPEN_files/lightgallery.min.js.download"></script>
+        <script type="text/javascript" src="./InfOPEN_files/lg-video.min.js.download"></script>
+
+        
+        <script type="text/javascript" src="./InfOPEN_files/homeslider.js.download"></script>
+
+    
+
+<div style="position: fixed; border-top-right-radius: 10px; border-top-left-radius: 10px; border-width: 2px 2px 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: initial; border-left-style: solid; border-top-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-bottom-color: initial; border-left-color: rgb(255, 255, 255); border-image: initial; bottom: -348px; overflow: hidden; height: 348px; z-index: 9999999; box-sizing: content-box; background-color: rgb(76, 91, 107); display: none; right: 100px;"><iframe id="hdWidgetFrame" style="border-width: 0px 1px; border-top-style: initial; border-right-style: solid; border-bottom-style: initial; border-left-style: solid; border-top-color: initial; border-right-color: rgb(68, 68, 68); border-bottom-color: initial; border-left-color: rgb(68, 68, 68); border-image: initial; overflow-y: hidden; border-top-right-radius: 10px; border-top-left-radius: 10px; height: 348px;" width="350" src="./Information Technology _ Technological Institute of the Philippines_files/saved_resource.html"></iframe></div><a href="https://www.jitbit.com/helpdesk/" title="Contact us" style="display: block; position: fixed; bottom: 30px; font-size: 30px; background-color: rgb(76, 91, 107); color: rgb(255, 255, 255); text-decoration: none; border: 2px solid rgb(255, 255, 255); border-radius: 50%; font-family: sans-serif; z-index: 9999; width: 50px; height: 50px; text-align: center; line-height: 49px; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 23px 4px; right: 100px;"><svg style="enable-background:new 0 0 499.997 500.002;" version="1.1" viewBox="0 0 499.997 500.002" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="speech-bubble"><g><g id="_x32_3"><path d="M160.463,236.991h66.031c21.883,0,39.622,17.74,39.622,39.627v16.513     c0,21.882-17.74,39.622-39.622,39.622h-38.841l-26.467,26.142c-5.064,5.016-9.212,3.269-9.212-3.856v-23.207     c-17.807-3.895-31.148-19.734-31.148-38.7v-16.513C120.826,254.731,138.571,236.991,160.463,236.991z" style="fill:#F2955C;"></path><path d="M319.515,138.232h-85.065c-32.948,0-59.662,26.719-59.662,59.656v24.856     c0,32.943,26.714,59.652,59.662,59.652h44.124l39.83,39.361c7.645,7.553,13.893,4.933,13.893-5.807v-34.936     c26.806-5.855,46.869-29.712,46.869-58.269v-24.856C379.166,164.95,352.452,138.232,319.515,138.232z" style="fill:#FFFFFF;"></path><g><g><path d="M207.614,211.014c0,8.077,6.549,14.63,14.621,14.63c8.077,0,14.625-6.553,14.625-14.63       s-6.548-14.62-14.625-14.62C214.163,196.394,207.614,202.938,207.614,211.014z" style="fill:#4C5B6B;"></path></g><g><path d="M259.732,211.014c0,8.077,6.544,14.63,14.621,14.63c8.072,0,14.625-6.553,14.625-14.63 s-6.553-14.62-14.625-14.62C266.276,196.394,259.732,202.938,259.732,211.014z" style="fill:#4C5B6B;"></path></g><g><path d="M311.836,211.014c0,8.077,6.553,14.63,14.63,14.63c8.076,0,14.616-6.553,14.616-14.63 s-6.539-14.62-14.616-14.62C318.389,196.394,311.836,202.938,311.836,211.014z" style="fill:#4C5B6B;"></path></g></g></g></g></g></svg></a></body></html>
